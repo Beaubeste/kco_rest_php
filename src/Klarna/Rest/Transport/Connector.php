@@ -127,7 +127,7 @@ class Connector implements ConnectorInterface
                 && !isset($options['body'])
                 && !isset($options['json'])
             ) {
-                $options['body'] = [];
+                $options['body'] = '';
             }
             if ($options) {
                 $this->requestOptions = $options;
